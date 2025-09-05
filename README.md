@@ -81,9 +81,22 @@ Seja criativo!
 
 Responda às questões abaixo diretamente neste arquivo `README.md` do seu fork:
 
-1. Repositório selecionado: <URL_DO_REPOSITORIO_SELECIONADO_AQUI>
-2. Gráfico selecionado: <IMAGEM_DO_GRAFICO_SELECIONADO_AQUI>
-3. Explicação: <EXPLICACAO_AQUI>
+1. Repositório selecionado: [Sherlock Project](https://github.com/sherlock-project/sherlock)
+2. Gráfico selecionado: 
 
+![Cobertura de testes](media/graph.png)
+
+3. Explicação: 
+
+O gráfico escolhido foi o de comparação entre arquivos de produção e arquivos de teste, uma vez que nele podemos ver uma mudança notável de curva. Analisando a evolução do código ao longo dos anos, percebemos que entre 2020 e 2022, nenhum arquivo de teste existia, o que mudou para um único arquivo de teste durante os anos de 2022 a 2024. Porém, percebemos um aumento considerável da curva de arquivos de teste e a primeira diminuição da curva de arquivos de produção desde o início do projeto no ano de 2024. Isso pode levantar uma hipotese: O código pode ter passado por uma refatoração no último ano que focou em testes e retirada de arquivos desnecessários.
+
+Explorando o repositório e buscando por logs relacionados a deleções de arquivos e atualizações da pasta de testes, ambos foram encontrados no ano de 2024, o que indica que essa refatoração realmente ocorreu, como mostram as imagens abaixo.
+
+![Log de Testes](media/log2.png)
+![Log de Refatoração](media/log1.png)
+
+Pensando na evolução do projeto, as boas práticas pedem crescimento paralelo de código de produção e de testes desde o início, porém, aqui houve um longo atraso: 3 anos sem nenhum arquivo de teste. Também foi analisado se o débito técnico foi pago com a realização dos testes de 2024 com a geração de um report html de verificação de cobertura (do próprio pytest), e, como pode ser visto na imagem abaixo, a cobertura ainda é abaixo do recomendando: 38%. 
+
+![Cobertura de Testes](media/coverage.png)
 
 
